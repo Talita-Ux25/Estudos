@@ -82,14 +82,20 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color:var(--cor5);
+   
 }
 .fundoproduto{
-    background-color:#427307;
+    background-color:#F2F2F2;
+    border: 1px solid black;
+    padding: 80px;
+    margin: 20px;
 }
 
 .produto{
 display: flex;
+flex-direction: rom;
+align-items: center;
 
 }
 
