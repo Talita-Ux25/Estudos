@@ -33,6 +33,12 @@ html,body{
     height: 100vh;
     background-color: var(--cor5);
     overflow-x: hidden;
+    color: var(--cor5);
+
+}
+header a,
+footer a{
+    color: var(--cor5);
 }
 
 /* Estilização da Header */
@@ -40,6 +46,7 @@ html,body{
     background-color: var(--cor1);
     padding: 10px 30px;
 }
+
 /* .div{
     margin: 0px 0px 0px 200px; 
 } */
@@ -67,7 +74,7 @@ html,body{
 .container{
     max-width: 80%;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .conteudo{
     /* main/largura do site  */
@@ -79,38 +86,222 @@ html,body{
 }
 /* Conteudo pg */
 .cardcontainer{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
-    background-color:var(--cor5);
-   
+    /* padding: 20px; */
+    color: var(--cor-preta);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 20px;
+    width: 98%;
+}
+
+
+.fundo-produto{
+    width: 100%;
+}
+.produto-novo,
+.localizacao-novo{
+    display: flex;
+    
+}
+.imagem-produto,
+.imagem-local{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.descricao-produto,
+.descricao-local{
+    width: 80%;
+    margin:auto;
+    /* display: flex; */
+}
+.descricao-local-endereco{
+    flex-direction: column;
+    /* text-align: center; */
+    color: #1e3469;
+    font-size: 14px;
+    
+}
+
+
+.sub-descricaoproduto{
+    margin: 10px 0
+    px 0px;
+}
+.descricao-produto{
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 0px;
+}
+
+
+.titulo-descricao{
+color: rgb(81, 79, 79);
+
+}
+
+.localizacao-novo{
+    /* padding-top: 20px; */
+    background-color: #eee;
+    /* height: 120px; */
+    /* margin: 30px auto; */
+    width: inherit;
+    /* border-radius: 10px; */
+    /* justify-content: center; */
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 1500px;
+    /* margin-top: 20px; */
+
+
 }
 .fundoproduto{
-    background-color:#F2F2F2;
-    border: 1px solid black;
-    padding: 80px;
-    margin: 20px;
-}
-
-.produto{
-display: flex;
-flex-direction: rom;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
+.descricao{
+    color: #000000;
+}
+
+.precoproduto{
+    font-size: 24px;
+    font-weight:bolder;
+    margin: 30px 0px 50px 0px;
+    /* justify-content: space-between; */
+    /* align-items: center;
+    justify-content: center; */
+
+}
+.test{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.descricao h3{
+    padding-bottom: 50px;
+}
+
+
 
 .localizacao{
     display: flex;
     justify-content: start;
     align-items: center;
+    /* flex-direction: rom; */
     /* gap: 100px;       ele da espaço entre os itens sem precisar de margin ou padding, colocar apenas no pai */
+}
+.endereco{
+    width: 30%;
 }
 
 
+/* Estilização Footer */
+.main-footer{
+    background-color: var(--cor1);
+    display: flow-root;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-content{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    /* border-top: 2px solid #f2f2f228; */
+}
+.logof{
+    width: 80px;
+}
+.footer-section{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    
+}
+.footer-section h4 {
+    width: 100%; 
+    text-align: left; 
+    margin: 0 0 8px 0; 
+    color: var(--cor5);
+    font-size: 1.1rem;
+}
+.footer-links{
+    padding-top: 9px;
+}
+.footer-links:hover{
+    text-decoration: underline;
+}
 
 
+.botao-direito{
+    margin: 0px 0px 0px 50px;
+    background-color: #1e3469;
+    /* padding: 80px 2px; */
+    color: #fff;
+    /* justify-content: space-around; */
+    font-size: 12px;
+    padding: 20px;
+    border-radius: 5px;
+    /* flex-grow: 5; */
+    /* width: 80%; */
+}
 
+/* .botao,
+.botao-esquerdo{
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: transform 0.5s ease;
+    
+    
+} */
+/* .botao,
+.botao-esquerdo:hover{
+    transform: scale(1.1); 
+    width: 100%;
+    /* height: 60%; 
+    object-fit: cover;
+    transition: transform 0.5s ease;
+} */
 
+.botao-direito,
+.botao-esquerdo {
+    background-color: var(--cor1); /* verde inicial */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.botao-esquerdo{
+flex-direction:star;
+
+}
+.botao-direito:hover {
+    background-color: #2a6aa3; /* verde mais escuro no hover */
+}
+.logo-localizacao{
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 50px;
+    /* width: 100%; */
+}
 
 
 /* Estilização Footer */
@@ -150,4 +341,10 @@ align-items: center;
 }
 .footer-links:hover{
     text-decoration: underline;
+}
+.divisor{
+    width: 100%;
+    border-bottom: 1px solid #e3e3e4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
