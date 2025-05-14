@@ -6,46 +6,58 @@
     <title>Promovale</title>
     <link rel="shortcut icon" href="img/LogoPromoVale_pequena.webp" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="PgProduto.css">
+    <link rel="stylesheet" href="PgProduto alface.css">
     <!-- <link rel="stylesheet" href="responsivo.css" media="screen and (max-width: 600px)">
 </head> -->
-<body>
-    <header class="cabeca1">
-        <nav class="menu container">
-            <!-- Está conectado aqui -->
-            <a href="#">
-                <img src="img/LogoPromoVale_pequena.webp" alt="logo" class="logo">
-            </a>
-            <ul class="categorias">
-                <li class="opcoes"><a href="#">Categorias</a></li>
-                <li class="opcoes"><a href="#">Cupons</a></li>
-                <li class="opcoes"><a href="#">Sobre nós</a></li>
-            </ul>
-            <div class="busca">
+<body onresize=" mudoutamanho()">
+    <header class="menu "> 
+        <nav class="nav-bar container">
+            <div class="container-logo">
+                <a href="home.html"><img src="img/LogoPromoVale_pequena.webp" alt="logo" class="logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-links"><a href="#">Mercado</a></li>
+                    <li class="nav-links"><a href="#">Cupons</a></li>
+                    <li class="nav-links"><a href="sobrenos.html">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="buscar">
                 <span class="material-symbols-outlined">search</span>
             </div>
+            <div class="hamburguer hb-funcoes">
+                <span class="material-symbols-outlined" onclick="menushow()">menu</span>
+            </div>
         </nav>
+        <div class="nav-list-segunda ">
+            <ul>
+                <li class="nav-links"><a href="#">Mercado</a></li>
+                <li class="nav-links"><a href="#">Cupons</a></li>
+                <li class="nav-links"><a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
+            <div class="buscar-segunda">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+        </div>
     </header>
-    <main class="container">  
         <!-- O container esta conectado com o menu, podemos criar os conteudos tranquilamente -->
-
+    <main class="container">  
         <div class="cardcontainer">
             <div class="fundo-produto">
                 <div class="produto-novo">
                     <div class="imagem-produto">
-                        <img src="img-produtos/350x350_kero_coco.webp" alt="Agua de coco">
+                        <img src="img-produtos/AlfaceAmericana.webp" alt="Alface Americana">
                     </div>
                     <div class="descricao-produto">
-                        <h2 class="titulo-descricao" >Água De Coco Kero Coco Caixa 1L</h2>
+                        <h2 class="titulo-descricao" >Alface Americana</h2>
                             <div class="divisor"></div>
                         <h3 class="sub-descricaoproduto">Descrição</h3>
                         <p>
-                            Kero Coco faz bem pra você!
-                            Hidrata naturalmente e repõe líquidos, sais minerais e nutrientes 
-                            importantes para o equilíbrio do organismo.
+                            Alface Americana Unidade.
+                            Crocante e refrescante, é fonte de vitaminas A e K, que auxiliam na saúde dos olhos e na coagulação sanguínea. Ideal para saladas leves e saborosas!
                         </p>
                         <div class="precoproduto">
-                            R$ 12,45 un
+                            R$ 6,99 un
                         </div>
                         <button class="botao-esquerdo">A partir de 3 unidades </button>
                     </div>
@@ -54,10 +66,9 @@
                     <div class="imagem-produto">
                     </div> 
                     <div class="descricao-produto ">
-                        <h3 class="beneficios-produto"> Benefícios da água de coco</h3>
+                        <h3 class="beneficios-produto"> Benefícios do Alface Americana</h3>
                         <p class="descricao-beneficios-produto">
-                            Além da hidratação do corpo, a água de coco da Kero Coco agrega outros benefícios para o organismo. Ela melhora o funcionamento dos rins, ajudando a eliminar as toxinas do corpo pelo estímulo da produção de urina; auxilia no emagrecimento, por conter propriedades diuréticas, poucos carboidratos e nenhuma gordura.
-                            A água de coco é indicada também para o tratamento de infecções intestinais em adultos e até de diarreias em crianças, pois ajuda a repor água e nutrientes eliminados em excesso nesses quadros.
+                            A alface americana oferece diversos benefícios à saúde, sendo rica em vitaminas A, C e K, além de fibras e minerais como cálcio e ferro. Ela auxilia na saúde dos ossos, fortalece o sistema imunológico, regula a pressão arterial, contribui para a coagulação sanguínea e pode auxiliar no processo de emagrecimento.
                         </p>
                     </div>
                 </div>
@@ -100,5 +111,6 @@
             </section>
         </div>
     </footer>
+    <script src="js/interacoes.js"></script>
 </body>
 </html>

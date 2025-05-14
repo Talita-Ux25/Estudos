@@ -1,0 +1,21 @@
+.cabeca1{
+background-color: blue;
+padding: 10px;30px
+}
+
+.div{
+
+}
+
+.menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.categorias{
+display: flex;
+gap: 50px;
+font-size:medium;
+list-style: none;
+}
